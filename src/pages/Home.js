@@ -27,9 +27,12 @@ export default class Home extends Component {
             </div>
           </div>
           <div className="quote">
-            <p>
-              I understood myself only after I destroyed myself. And only in the
-              process of fixing myself, did I know who I really was.{' '}
+            <p className="text-center">
+              "I understood myself only after I destroyed myself.
+            </p>
+            <p className="text-center">
+              And only in the process of fixing myself, did I know who I really
+              was." - Side Andria Zabala
             </p>
           </div>
         </div>

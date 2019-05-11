@@ -6,6 +6,7 @@ import Home from './Home';
 import Session from './Session';
 import Suggestion from './Suggestion';
 import './styles.scss';
+import Team from './Team';
 export default class Container extends Component {
   state = {
     openDrawer: false
@@ -15,7 +16,11 @@ export default class Container extends Component {
       openDrawer: !state.openDrawer
     }));
   };
-
+  componentWillReceiveProps() {
+    this.setState({
+      onOpenDrawer: false
+    });
+  }
   render() {
     const { openDrawer } = this.state;
     return (
@@ -28,6 +33,7 @@ export default class Container extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/suggestions" component={Suggestion} />
+            <Route exact path="/team" component={Team} />
             <Route
               exact
               path="/session"

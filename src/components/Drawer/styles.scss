@@ -15,30 +15,45 @@
   &.active {
     width: 250px;
   }
-}
-
-.side-link {
-  list-style: none;
-  margin: auto;
-  li {
-    a {
-      color: #fff;
+  .side-link {
+    list-style: none;
+    margin: auto;
+    li {
+      padding-top: 15px;
+      a {
+        color: #fff;
+        padding: 15px;
+        padding-left: 5px;
+      }
+    }
+    img.link-icon {
+      width: 20px;
     }
   }
-}
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  color: #fff;
-  cursor: pointer;
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .company-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img.logo {
+      width: 60px;
+      height: 80px;
+      border-radius: 50%;
+    }
+  }
 }
 
 @media screen and (max-height: 450px) {
