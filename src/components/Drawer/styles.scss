@@ -1,0 +1,63 @@
+.sidenav {
+  height: 100%;
+  display: flex;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  &.active {
+    width: 250px;
+  }
+}
+
+.side-link {
+  list-style: none;
+  margin: auto;
+  li {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+  }
+}
