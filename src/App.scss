@@ -2,38 +2,62 @@
   display: flex;
   overflow: hidden;
   height: 100%;
-  .starter-btn {
-    margin: auto;
-    .round-btn {
-      outline: none;
-      color: rgba(0, 0, 0, 0.87);
-      &:hover,
-      &:focus,
-      &:active {
-        background-color: rgba(0, 0, 0, 0.87);
+  background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.8) 0%,
+      rgba(23, 23, 22, 0) 97.24%
+    ),
+    url('./assets/help.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    .brand-name {
+      color: #fff;
+    }
+    .quote {
+      p {
         color: #fff;
       }
-      width: auto;
-      height: 48px;
-      padding: 0 16px;
-      min-width: 48px;
-      min-height: auto;
-      border-radius: 24px;
-      font-size: 0.875rem;
-      box-sizing: border-box;
-      min-height: 36px;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-      box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-        0px 6px 10px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-      font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-      font-weight: 500;
-      line-height: 1.75;
-      letter-spacing: 0.02857em;
-      text-transform: uppercase;
-      background-color: #fff;
+    }
+    .starter-btn {
+      .round-btn {
+        outline: none;
+        color: rgba(0, 0, 0, 0.87);
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: rgba(0, 0, 0, 0.87);
+          color: #fff;
+        }
+        width: auto;
+        height: 48px;
+        padding: 0 16px;
+        min-width: 48px;
+        min-height: auto;
+        border-radius: 24px;
+        font-size: 0.875rem;
+        box-sizing: border-box;
+        min-height: 36px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+          border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+          0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+        font-weight: 500;
+        line-height: 1.75;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
+        background-color: #fff;
+      }
     }
   }
 }
