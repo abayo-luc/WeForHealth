@@ -11,6 +11,18 @@ export default class Container extends Component {
   state = {
     openDrawer: false
   };
+  componentDidMount() {
+    document.addEventListener('mousedown', this.closeDrawer);
+  }
+
+  closeDrawer = e => {
+    if (!this.drawerRef.contains(e.target)) {
+      console.log('hello world');
+      this.setState({
+        openDrawer: false
+      });
+    }
+  };
   toggleDrawer = () => {
     this.setState(state => ({
       openDrawer: !state.openDrawer
@@ -21,13 +33,18 @@ export default class Container extends Component {
       onOpenDrawer: false
     });
   }
+  setDrawer = node => {
+    this.drawerRef = node;
+  };
   render() {
     const { openDrawer } = this.state;
     return (
       <Router>
         <div>
-          <Navbar onOpenDrawer={this.toggleDrawer} />
-          <Drawer isOpen={openDrawer} />
+          <div ref={this.setDrawer}>
+            <Navbar onOpenDrawer={this.toggleDrawer} />
+            <Drawer isOpen={openDrawer} />
+          </div>
         </div>
         <div className="pages-container">
           <Switch>

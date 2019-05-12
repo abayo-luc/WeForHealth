@@ -6,7 +6,6 @@ import './styles.scss';
 class Navbar extends Component {
   render() {
     const { onOpenDrawer, history } = this.props;
-    console.log(this.props.history);
     return (
       <div className="pos-f-t top-bar fixed-top">
         <div className="collapse" id="navbarToggleExternalContent">

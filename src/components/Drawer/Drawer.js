@@ -37,7 +37,6 @@ class Drawer extends Component {
       isOpen,
       history: { location }
     } = this.props;
-    console.log(location);
     return (
       <div id="mySidenav" className={`sidenav ${isOpen ? 'active' : ''}`}>
         <div className="column">

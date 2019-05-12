@@ -42,13 +42,13 @@ export default class Team extends Component {
               <h2>About Us </h2>
               <p>
                 WeForHealth is a group of youth social activists who care more
-                about the life of the people, We are fighting for the change in
+                about the life of the people, we are fighting for the change in
                 society, that’s why we brought to you a platform that acts as an
                 intermediate between drug & alcohol addicts and
                 counselor/therapist to connect in a confidential way. This
                 platform also gives room for the testimonies of people who would
-                like to share to the community how they were helped by therapist
-                and encouraging others to do so.
+                like to share with the community how they were helped by
+                therapist and encouraging others to do so.
               </p>
             </div>
           </div>

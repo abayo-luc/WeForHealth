@@ -14,7 +14,7 @@ export default class Home extends Component {
                 onClick={() => this.props.history.push('/session')}
                 className="round-btn"
               >
-                Join Chat Now
+                Meet a therapist
               </button>
             </div>
             <div className="btn join-now">
@@ -22,7 +22,7 @@ export default class Home extends Component {
                 onClick={() => this.props.history.push('/suggestions')}
                 className="round-btn"
               >
-                Leave Suggestion
+                Want to help?
               </button>
             </div>
           </div>
