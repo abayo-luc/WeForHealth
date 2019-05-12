@@ -8,6 +8,16 @@ const chatData = [
   },
   {
     id: '2',
+    user: true,
+    trigger: '3'
+  },
+  {
+    id: '3',
+    message: 'Oh sorry, may I hear a little bit more?',
+    trigger: '4'
+  },
+  {
+    id: '4',
     user: true
   }
 ];

@@ -75,6 +75,11 @@ export const chatData = [
       },
       {
         value: 3,
+        label: 'Alcohol',
+        trigger: '12'
+      },
+      {
+        value: 4,
         label: 'Mention other',
         trigger: '11'
       }
@@ -87,7 +92,7 @@ export const chatData = [
   },
   {
     id: '12',
-    message: `It is good to know. Can we have your name please?`,
+    message: `How long have you been taking drugs?`,
     trigger: '13'
   },
   {
@@ -97,7 +102,7 @@ export const chatData = [
   },
   {
     id: '14',
-    message: 'How log have you been taking drugs?',
+    message: 'It is good to know. How may you like us to call you?',
     trigger: '15'
   },
   {
