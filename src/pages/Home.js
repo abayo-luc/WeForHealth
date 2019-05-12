@@ -11,7 +11,7 @@ export default class Home extends Component {
           <div className="starter-btn">
             <div className="btn join-now">
               <button
-                onClick={() => this.props.history.push('/session')}
+                onClick={() => this.props.history.push('/chat')}
                 className="round-btn"
               >
                 Want to talk to someone?
