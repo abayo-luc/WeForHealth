@@ -7,6 +7,7 @@ import Session from './Session';
 import Suggestion from './Suggestion';
 import './styles.scss';
 import Team from './Team';
+import PersonalChat from './Chat';
 export default class Container extends Component {
   state = {
     openDrawer: false
@@ -51,6 +52,14 @@ export default class Container extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/suggestions" component={Suggestion} />
             <Route exact path="/team" component={Team} />
+
+            <Route
+              exact
+              path="/chat"
+              render={props => (
+                <PersonalChat isDrawerOpen={openDrawer} {...props} />
+              )}
+            />
             <Route
               exact
               path="/session"

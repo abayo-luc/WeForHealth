@@ -14,6 +14,14 @@ export default class Home extends Component {
                 onClick={() => this.props.history.push('/session')}
                 className="round-btn"
               >
+                Want to talk to someone?
+              </button>
+            </div>
+            <div className="btn join-now">
+              <button
+                onClick={() => this.props.history.push('/session')}
+                className="round-btn"
+              >
                 Meet a therapist
               </button>
             </div>

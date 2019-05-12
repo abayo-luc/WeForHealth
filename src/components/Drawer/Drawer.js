@@ -4,6 +4,7 @@ import HomeIcon from '../../assets/home.svg';
 import SessionIcon from '../../assets/session.svg';
 import ContactIcon from '../../assets/contact.svg';
 import TeamIcon from '../../assets/team.svg';
+import ChatIcon from '../../assets/chatting.svg';
 import './styles.scss';
 const pages = [
   {
@@ -11,6 +12,12 @@ const pages = [
     path: '/',
     name: 'Home',
     icon: HomeIcon
+  },
+  {
+    key: '5',
+    path: '/chat',
+    name: 'Chat',
+    icon: ChatIcon
   },
   {
     key: '2',

@@ -3,9 +3,9 @@ import ChatBot from 'react-simple-chatbot';
 import DoctorIcon from '../../assets/doctor.svg';
 import './styles.scss';
 import ChatHeader from './ChatHeader';
-import { chatData } from '../../data/chat';
 export default class Chat extends Component {
   render() {
+    const { chatData } = this.props;
     return (
       <ChatBot
         headerTitle="Speech Recognition"

@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import Chat from '../components/Chat/Chat';
-import { chatData } from '../data/chat';
-export default class Session extends Component {
+const chatData = [
+  {
+    id: '1',
+    message: 'Welcome to WeForHealth, how are you feeling today?',
+    trigger: '2'
+  },
+  {
+    id: '2',
+    user: true
+  }
+];
+export default class PersonalChat extends Component {
   render() {
     const { isDrawerOpen } = this.props;
     return (
